@@ -1,0 +1,22 @@
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    z-index: 10;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0;
+    transition: 200ms ease all;
+    pointer-events: none;
+}
+
+.modal.active {
+    opacity: 1;
+    pointer-events: all;
+}
+
